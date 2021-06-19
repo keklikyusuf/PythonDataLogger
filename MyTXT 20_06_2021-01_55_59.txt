@@ -1,0 +1,7 @@
+20-06-2021 01:55:59: That can be any string to log! 
+20-06-2021 01:55:59: That can be any string to log! 
+20-06-2021 01:56:00: That can be any string to log! 
+20-06-2021 01:56:00: That can be any string to log! 
+20-06-2021 01:56:01: That can be any string to log! 
+20-06-2021 01:56:01: That can be any string to log! 
+20-06-2021 01:56:02: That can be any string to log! 
