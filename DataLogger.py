@@ -66,7 +66,8 @@ class txtDatalogger:
         :return: This function returns to logged text message
         Any message is being saved to created text file with this method
         """
-        txtMessage = f'{message} \n'
+        timeStamp = time.strftime('%d-%m-%Y %H:%M:%S')
+        txtMessage = f'{timeStamp}: {message} \n'
         txtFile = open(self.finalName, 'a')
         txtFile.write(txtMessage)
         txtFile.close()
