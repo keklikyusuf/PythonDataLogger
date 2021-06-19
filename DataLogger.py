@@ -84,4 +84,4 @@ if __name__ == '__main__':
         txtLog.txtLogger(txtFrame)
         time.sleep(0.5)
         for i in range(1, len(dataFrame)):
-            dataFrame[i] = random.randint(0, 100)
+            dataFrame[i] = random.randint(0, 100 )
