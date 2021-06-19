@@ -1,7 +1,7 @@
 """
 This is created for data logging!
 You can select your data as list that you need log!
-Data list can be updated and logged to created file!
+Data list can be updated and logged to created file as csv or text!
 version 0.0.1
 @keklikyusuf
 """
@@ -36,7 +36,7 @@ class csvDataLogger:
     def csvLogger(self):
         """
         :param data: Data which is being logged! -List
-        :return: This function returns nothing
+        :return: This function returns to data frame
         It opens created log file and logs it according to desired logging.
         """
         csvFile = open(self.finalName, 'a', newline='')
@@ -48,19 +48,29 @@ class csvDataLogger:
 
 
 class txtDatalogger:
+    """
+        It has been created to log any data type into TXT as text. Data can be adjusted according to user desire!
+    """
 
     def __init__(self, fileName):
+        """
+        :param fileName: Enter desired file name for your text file. -String
+        """
         self.fileName = fileName
         time = datetime.datetime.now().strftime("%d_%m_%Y-%H_%M_%S")
         self.finalName = f'{self.fileName} {time}.txt'
         open(f'{self.finalName}', "w+").close()
 
     def txtLogger(self, message):
+        """
+        :param message: Text message that wanted to be loged and saved to text file
+        :return: This function returns to logged text message
+        """
         txtMessage = f'{message} \n'
         txtFile = open(self.finalName, 'a')
         txtFile.write(txtMessage)
         txtFile.close()
-        return message
+        return txtMessage
 
 
 if __name__ == '__main__':
