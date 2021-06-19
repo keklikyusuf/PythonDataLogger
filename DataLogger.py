@@ -35,9 +35,8 @@ class csvDataLogger:
 
     def csvLogger(self):
         """
-        :param data: Data which is being logged! -List
         :return: This function returns to data frame
-        It opens created log file and logs it according to desired logging.
+        CSV file is being called to log with this method
         """
         csvFile = open(self.finalName, 'a', newline='')
         write = csv.writer(csvFile)
@@ -65,6 +64,7 @@ class txtDatalogger:
         """
         :param message: Text message that wanted to be loged and saved to text file
         :return: This function returns to logged text message
+        Any message is being saved to created text file with this method
         """
         txtMessage = f'{message} \n'
         txtFile = open(self.finalName, 'a')
